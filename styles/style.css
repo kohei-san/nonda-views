@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d-block {
+  display: block;
+}
+
+header {
+  height: 10vh;
+  padding: 0.5rem 1rem;
+  background-color: #e91d63;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  font-size: 0.9rem;
+}
+
+.top-container {
+  height: 50vh;
+  background-color: #e91d63;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-container .top-logo {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.top-container .top-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 1.5rem 1rem;
+}
+
+.top-container .top-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.top-btn {
+  display: inline-block;
+  padding: 0.8rem;
+  background-color: #e91d63;
+  border: 1px solid white;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 2rem;
+}
+
+.top-btn:hover {
+  background-color: white;
+  color: #e91d63;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-container {
+  border: 1px solid;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1rem;
+}
+
+form h1 {
+  text-align: center;
+}
+
+form label {
+  display: block;
+}
+
+form input {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+form button {
+  margin: 1rem 0;
+}
+
+.form-btn {
+  width: 100%;
+}
+
+.form-btn {
+  width: 100%;
+  display: inline-block;
+  padding: 0.8rem;
+  background-color: #e91d63;
+  border: 1px solid white;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 2rem;
+}
+
+.form-btn:hover {
+  background-color: white;
+  color: #e91d63;
+  border: 1px solid #e91d63;
+}
+
+@media (min-width: 480px) {
+  /******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+  .top-subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 600px) {
+  /******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+  header {
+    height: 10vh;
+    padding: 0.5rem 3rem;
+  }
+  form {
+    padding: 0 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 960px) {
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+}
+
+@media (min-width: 1280px) {
+  /******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /******************************************************************
+
+Stylesheet: Retinaディスプレイで適用
+
+******************************************************************/
+  /* 
+
+EXAMPLE 
+.icon {
+	background: url(images/test@2x.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+*/
+}
+
+@media print {
+  /******************************************************************
+
+Stylesheet: プリンタのみに適用
+
+******************************************************************/
+}
+/*# sourceMappingURL=style.css.map */
