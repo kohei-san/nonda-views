@@ -27,7 +27,7 @@ body {
 header {
   height: 10vh;
   padding: 0.5rem 1rem;
-  background-color: #e91d63;
+  background-color: pink;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,7 +46,7 @@ header h1 {
 
 .top-container {
   height: 50vh;
-  background-color: #e91d63;
+  background-color: pink;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,7 +82,7 @@ header h1 {
 .top-btn {
   display: inline-block;
   padding: 0.8rem;
-  background-color: #e91d63;
+  background-color: pink;
   border: 1px solid white;
   color: white;
   -webkit-transition: all 0.3s;
@@ -92,7 +92,7 @@ header h1 {
 
 .top-btn:hover {
   background-color: white;
-  color: #e91d63;
+  color: pink;
 }
 
 .container {
@@ -108,6 +108,9 @@ header h1 {
   border: 1px solid;
   margin: 2rem;
   padding: 1rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 3px 3px 10px 2px pink;
+          box-shadow: 3px 3px 10px 2px pink;
 }
 
 form {
@@ -139,13 +142,9 @@ form button {
 
 .form-btn {
   width: 100%;
-}
-
-.form-btn {
-  width: 100%;
   display: inline-block;
   padding: 0.8rem;
-  background-color: #e91d63;
+  background-color: pink;
   border: 1px solid white;
   color: white;
   -webkit-transition: all 0.3s;
@@ -155,8 +154,61 @@ form button {
 
 .form-btn:hover {
   background-color: white;
-  color: #e91d63;
-  border: 1px solid #e91d63;
+  color: pink;
+  border: 1px solid pink;
+}
+
+.welcome {
+  margin: 0.5rem 0;
+}
+
+.month {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.calendar {
+  margin: 1rem 0;
+  border: 1px solid pink;
+  padding: 1rem;
+  -webkit-box-shadow: 3px 3px 10px 2px pink;
+          box-shadow: 3px 3px 10px 2px pink;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid gray;
+  width: calc( 84vw / 7);
+  height: calc( 2rem);
+  text-align: center;
+}
+
+.day {
+  background-color: lightgray;
+}
+
+.sunday {
+  color: red;
+}
+
+.saturday {
+  color: blue;
+}
+
+.album {
+  font-size: 3rem;
+}
+
+.album i {
+  background-color: lightgray;
+  padding: 0.2rem 3rem;
+}
+
+.album span {
+  font-size: 1rem;
 }
 
 @media (min-width: 480px) {
@@ -181,13 +233,22 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     padding: 0.5rem 3rem;
   }
   form {
-    padding: 0 3rem;
+    padding: 0 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .top-message {
+    font-size: 1.2rem;
+  }
+  th {
+    border: 1px solid gray;
+    width: calc( 63vw / 7);
+    height: 2.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -197,6 +258,13 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  .top-message {
+    font-size: 1.4rem;
+  }
+  th {
+    width: calc( 49vw / 7);
+    font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -205,6 +273,13 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .top-message {
+    font-size: 1.5rem;
+  }
+  th {
+    height: 3rem;
+    font-size: 1.5rem;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

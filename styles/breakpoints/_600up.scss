@@ -10,7 +10,18 @@ header{
 }
 
 form{
-  padding: 0 3rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: center;
+}
+
+.top-message{
+  font-size: $font600;
+}
+
+th{
+  border: 1px solid gray;
+  width: calc( 63vw / 7);
+  height: 2.5rem;
+  font-size: $font600;
 }

@@ -3,3 +3,12 @@
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+
+.top-message{
+  font-size: $font1280;
+}
+
+th{
+  height: 3rem;
+  font-size: $font1280;
+}

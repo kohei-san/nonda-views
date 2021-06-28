@@ -3,8 +3,13 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
-$base-color: #e91d63;
+// テーマカラー、文字カラー
+$base-color: pink;
 $white: white;
+// 各表示サイズでのフォントサイズ
+$font600: 1.2rem;
+$font960: 1.4rem;
+$font1280: 1.5rem;
 
 body
 {
@@ -34,7 +39,6 @@ header{
 
   h1{
     font-size: 0.9rem;
-
   }
 }
 
@@ -46,18 +50,18 @@ header{
   justify-content: center;
   align-items: center;
 
-  .top-logo{
+  & .top-logo{
     font-size: 4rem;
     text-align: center;
   }
 
-  .top-subtitle{
+  & .top-subtitle{
     font-size: 1.2rem;
     text-align: center;
     margin: 0 1.5rem 1rem;
   }
 
-  .top-btns{
+  & .top-btns{
     display: flex;
     justify-content: space-around;
     margin-bottom: 1rem;
@@ -91,6 +95,8 @@ header{
   border: 1px solid;
   margin: 2rem;
   padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 10px 2px $base-color;
 }
 
 form{
@@ -98,26 +104,23 @@ form{
   justify-content: center;
   padding: 0 1rem;
 
-  h1{
+  & h1{
     text-align: center;
   }
-  label{
+  & label{
     display: block;
   }
   
-  input{
+  & input{
     display: block;
     margin-bottom: 1rem;
   }
 
-  button{
+  & button{
     margin: 1rem 0;
   }
 }
 
-.form-btn{
-  width: 100%;
-}
 .form-btn{
   width: 100%;
   display: inline-block;
@@ -132,5 +135,57 @@ form{
     background-color: white;
     color: $base-color;
     border: 1px solid $base-color;
+  }
+}
+
+// カレンダー
+// モバイルは画面センター
+// 600以上はセルサイズ都度調整、フォントサイズは変数使用
+.welcome{
+  margin: 0.5rem 0;
+}
+
+.month{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.calendar{
+  margin: 1rem 0;
+  border: 1px solid $base-color;
+  padding: 1rem;
+  box-shadow: 3px 3px 10px 2px $base-color;
+}
+
+table{
+  border-collapse: collapse;
+}
+th{
+  border: 1px solid gray;
+  width: calc( 84vw / 7);
+  height: calc( 2rem);
+  text-align: center;
+}
+.day{
+  background-color:lightgray;
+}
+.sunday{
+  color: red
+  ;
+}
+.saturday{
+  color: blue;
+}
+
+// アイコン
+.album{
+  font-size: 3rem;
+  & i{
+    background-color: lightgray;
+    padding: 0.2rem 3rem;
+  }
+
+  & span{
+    font-size: 1rem;
   }
 }
