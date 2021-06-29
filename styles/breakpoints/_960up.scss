@@ -11,3 +11,11 @@ th{
   width: calc( 49vw / 7);
   font-size: $font960;
 }
+
+// 画像// 画像
+.popup-image{
+
+  & p{
+    font-size: $font960;
+  }
+}

@@ -24,6 +24,10 @@ body {
   display: block;
 }
 
+.btn-radius {
+  border-radius: 2rem;
+}
+
 header {
   height: 10vh;
   padding: 0.5rem 1rem;
@@ -211,6 +215,26 @@ th {
   font-size: 1rem;
 }
 
+.image-section {
+  width: 100%;
+  height: 100vh;
+  padding: 5vh 5vw;
+  border: 1px solid black;
+  background: radial-gradient(#606060, #909090);
+}
+
+.image-section img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.message-with-img {
+  margin: 0.5rem 0;
+  color: white;
+  font-weight: bold;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -250,6 +274,12 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     height: 2.5rem;
     font-size: 1.2rem;
   }
+  .image-section img {
+    height: 100%;
+  }
+  .message-with-image {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 960px) {
@@ -265,6 +295,9 @@ Stylesheet: 960px以上のモニタで適用
     width: calc( 49vw / 7);
     font-size: 1.4rem;
   }
+  .popup-image p {
+    font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -278,6 +311,9 @@ Stylesheet: 1280px以上のモニタで適用
   }
   th {
     height: 3rem;
+    font-size: 1.5rem;
+  }
+  .message-with-image {
     font-size: 1.5rem;
   }
 }

@@ -25,3 +25,14 @@ th{
   height: 2.5rem;
   font-size: $font600;
 }
+
+// 画像// 画像
+.image-section{
+  & img{
+    height: 100%;
+  }
+
+}
+.message-with-image{
+  font-size: $font600;
+}
