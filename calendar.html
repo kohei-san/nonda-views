@@ -11,166 +11,26 @@
   <script src="https://kit.fontawesome.com/f7d9360c1b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="d-flex justify-space-between">
-    <h1>Nonda?</h1>
-    <nav>
-      <div>メニュー</div>
-    </nav>
-  </header>
+  <!-- nonda？ボタン -->
+  <div id="nonda-container" class="nonda-btn-container">
+    <h1>今日のお薬を飲みましたか？</h1>
+    <ul>
+      <input type="checkbox"><li>薬: ○錠</li>
+      <input type="checkbox"><li>薬: ○錠</li>
+      <input type="checkbox"><li>薬: ○錠</li>
+      <input type="checkbox"><li>薬: ○錠</li>
+    </ul>
 
-  <!-- カレンダー部分 -->
-  <div class="container">
-    <div>
-      <div class="top-message welcome">
-        <h3>こんにちはフミ子さん</h3>
-      </div>
-      <div class="calendar">
-        <div class="month">
-          <h3>2020年7月</h3>
-        </div>
-        <div class="top-message">
-          <h3>フミ子さんは<br>2日連続でお薬を飲みました！</h3>
-        </div>
-        <table class="calender-table">
-    
-          <tr class="wdays">
-            <th class="wday">日</th>
-            <th class="wday">月</th>
-            <th class="wday">火</th>
-            <th class="wday">水</th>
-            <th class="wday">木</th>
-            <th class="wday">金</th>
-            <th class="wday">土</th>
-          </tr>
-          
-      
-          <tr class="days-line-1">
-            <th class="day sunday"></th>
-            <th class="day"></th>
-            <th class="day"></th>
-            <th class="day"></th>
-            <th class="day">1</th>
-            <th class="day">2</th>
-            <th class="day saturday">3</th>
-          </tr>
-          <tr>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check">○</th>
-            <th class="check">○</th>
-          </tr>
-          
-          <tr class="days-line-2">
-            <th class="day sunday">4</th>
-            <th class="day">5</th>
-            <th class="day">6</th>
-            <th class="day">7</th>
-            <th class="day">8</th>
-            <th class="day">9</th>
-            <th class="day saturday">10</th>
-          </tr>
-          <tr>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check">○</th>
-            <th class="check">○</th>
-          </tr>
-          
-          
-          <tr class="days-line-3">
-            <th class="day sunday">11</th>
-            <th class="day">12</th>
-            <th class="day">13</th>
-            <th class="day">14</th>
-            <th class="day">15</th>
-            <th class="day">16</th>
-            <th class="day saturday">17</th>
-          </tr>
-          <tr>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check">○</th>
-            <th class="check">○</th>
-          </tr>
-          
-          <tr class="days-line-4">
-            <th class="day sunday">18</th>
-            <th class="day">19</th>
-            <th class="day">20</th>
-            <th class="day">21</th>
-            <th class="day">22</th>
-            <th class="day">23</th>
-            <th class="day saturday">24</th>
-          </tr>
-          <tr>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check">○</th>
-            <th class="check">○</th>
-          </tr>
-          
-          <tr class="days-line-5">
-            <th class="day sunday">25</th>
-            <th class="day">26</th>
-            <th class="day">27</th>
-            <th class="day">28</th>
-            <th class="day">29</th>
-            <th class="day">30</th>
-            <th class="day saturday">31</th>
-          </tr>
-          <tr>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check"></th>
-            <th class="check">○</th>
-            <th class="check">○</th>
-          </tr>
-          
-        </table>
-      </div>
-    </div>  
-  </div>
-
-  <!-- アイコン -->
-  <div class="album">
-    <i class="fas fa-book-open"></i>
-    <span>アルバムを見る</span>
+    <button id="nonda-btn">飲んだ</button>
   </div>
 
   <!-- pop-up 画像 -->
-  <div class="pop-image">
-    <div class="image-section">
-      <p class="message-with-img">子供たちと旅行へ行ってきたよ！</p>
-      <img src="images/test_1.jpg" alt="画像が表示できませんでした">
-      <button class="btn-radius">閉じる</button>
-      <button>いつ？</button>
-      <button>どこで？</button>
-      <button>誰が？</button>
-      <button>なにをした？</button>
-      <button>なぜ？</button>
-    </div>
-  </div>
-
-    <!-- その他 画像 -->
-    <div class="">
-      <div class="">
-        <p class="message-with-img">過去の画像</p>
-        <img src="" alt="画像が表示できませんでした">
-        <button class="btn-radius">閉じる</button>
+  <div id="image-container" class="popup-image-container display-none">
+    <div class="pop-image">
+      <div class="image-section">
+        <p class="message-with-img">子供たちと旅行へ行ってきたよ！</p>
+        <img src="images/test_1.jpg" alt="画像が表示できませんでした">
+        <button id="close-btn" class="btn-radius">閉じる</button>
         <button>いつ？</button>
         <button>どこで？</button>
         <button>誰が？</button>
@@ -178,8 +38,172 @@
         <button>なぜ？</button>
       </div>
     </div>
-  
+  </div>
 
+  <!-- カレンダー画面 -->
+  <div id="calendar-container" class="calender-container display-none">
+    <header class="d-flex justify-space-between">
+      <h1>Nonda?</h1>
+      <nav>
+        <div>メニュー</div>
+      </nav>
+    </header>
+    
+      <!-- カレンダー部分 -->
+    <main>
+    
+      <div class="container">
+        <div>
+          <div class="top-message welcome">
+            <h3>こんにちはフミ子さん</h3>
+          </div>
+          <div class="calendar">
+            <div class="month">
+              <h3>2020年7月</h3>
+            </div>
+            <div class="top-message">
+              <h3>フミ子さんは<br>2日連続でお薬を飲みました！</h3>
+            </div>
+            <table class="calender-table">
+        
+              <tr class="wdays">
+                <th class="wday">日</th>
+                <th class="wday">月</th>
+                <th class="wday">火</th>
+                <th class="wday">水</th>
+                <th class="wday">木</th>
+                <th class="wday">金</th>
+                <th class="wday">土</th>
+              </tr>
+              
+          
+              <tr class="days-line-1">
+                <th class="day sunday"></th>
+                <th class="day"></th>
+                <th class="day"></th>
+                <th class="day"></th>
+                <th class="day">1</th>
+                <th class="day">2</th>
+                <th class="day saturday">3</th>
+              </tr>
+              <tr>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check">○</th>
+                <th class="check">○</th>
+              </tr>
+              
+              <tr class="days-line-2">
+                <th class="day sunday">4</th>
+                <th class="day">5</th>
+                <th class="day">6</th>
+                <th class="day">7</th>
+                <th class="day">8</th>
+                <th class="day">9</th>
+                <th class="day saturday">10</th>
+              </tr>
+              <tr>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check">○</th>
+                <th class="check">○</th>
+              </tr>
+              
+              
+              <tr class="days-line-3">
+                <th class="day sunday">11</th>
+                <th class="day">12</th>
+                <th class="day">13</th>
+                <th class="day">14</th>
+                <th class="day">15</th>
+                <th class="day">16</th>
+                <th class="day saturday">17</th>
+              </tr>
+              <tr>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check">○</th>
+                <th class="check">○</th>
+              </tr>
+              
+              <tr class="days-line-4">
+                <th class="day sunday">18</th>
+                <th class="day">19</th>
+                <th class="day">20</th>
+                <th class="day">21</th>
+                <th class="day">22</th>
+                <th class="day">23</th>
+                <th class="day saturday">24</th>
+              </tr>
+              <tr>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check">○</th>
+                <th class="check">○</th>
+              </tr>
+              
+              <tr class="days-line-5">
+                <th class="day sunday">25</th>
+                <th class="day">26</th>
+                <th class="day">27</th>
+                <th class="day">28</th>
+                <th class="day">29</th>
+                <th class="day">30</th>
+                <th class="day saturday">31</th>
+              </tr>
+              <tr>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check"></th>
+                <th class="check">○</th>
+                <th class="check">○</th>
+              </tr>
+              
+            </table>
+          </div>
+        </div>  
+      </div>
+    
+      <!-- アイコン -->
+      <div class="album">
+        <i class="fas fa-book-open"></i>
+        <span>アルバムを見る</span>
+      </div>
+    
+      
+    
+      <!-- その他 画像 -->
+      <div class="display-none">
+        <div class="">
+          <p class="message-with-img">過去の画像</p>
+          <img src="" alt="画像が表示できませんでした">
+          <button class="btn-radius">閉じる</button>
+          <button>いつ？</button>
+          <button>どこで？</button>
+          <button>誰が？</button>
+          <button>なにをした？</button>
+          <button>なぜ？</button>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+<script src="JavaScript/main.js"></script>
 </body>
 
 </html>
